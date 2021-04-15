@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-image:url(./_imagens/mercado-ver-o-peso-1.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+#audioPlayer{
+    width:470px;
+}
+.container{
+    position:relative;
+    background-color:rgba(255, 254, 254, 0.658);
+    border-radius:23px;
+    display:inline-block;
+    margin-left:37vw;
+}
+#playlist{
+    list-style:none;
+    text-align:center;
+    font-size:20px;
+    line-height:29px;
+    font-family:'Source Sans Pro', sans-serif;
+}
+#playlist li a{
+    color:black;
+    text-decoration:none;
+}
+#playlist .current-song a{
+    color:blue;
+    font-weight:bold;
+}
+#playlist .current-song a::after{
+    content:"";
+    display:inline-block;
+    width:2.3vw;
+    height:1.4vw;
+    margin-left:5px;
+    background-image:url(./_imagens/tacaca.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+
+@media (max-width: 700px){
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+    body{
+        background-image:url(./_imagens/Porto_de_belém.jpg);
+        background-size:cover;
+    }
+    #audioPlayer{
+        width:330px;
+    }
+    .container{
+        background-color:rgba(255, 254, 254, 0.658);
+        border-radius:23px;
+        display:inline-block;
+        margin-left:10vw;
+    }
+    #playlist{
+        list-style:none;
+        text-align:center;
+        font-size:16px;
+        line-height:28px;
+        font-family:'Source Sans Pro', sans-serif;
+    }
+    #playlist li a{
+        color:black;
+        text-decoration:none;
+    }
+    #playlist .current-song a{
+        color:blue;
+        font-weight:bold;
+    }
+    #playlist .current-song a::after{
+        content:"";
+        display:inline-block;
+        width:6.5vw;
+        height:4vw;
+        margin-left:5px;
+        background-image:url(./_imagens/tacaca.png);
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size:cover;
+    }
+}
